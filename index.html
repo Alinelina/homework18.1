@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опросник</title>
+    <link rel="shotcut icon" href="https://cdn-icons-png.flaticon.com/512/1818/1818401.png" type="image/png">
+<style>
+    h1 {
+        color: #ff7300;
+    }
+    fieldset {
+        width: 376px;
+    }
+</style>
+</head>
+
+<body>
+    <h1>Анкета для владельцев котиков</h1>
+    <form action="#">
+        <div>
+            <label for="nickname">Кличка питомца*</label>
+            <input type="text" id="nickname" name="Кличка питомца" value="" maxlength="25" required/>
+        </div>
+        <fieldset>
+            <legend>Данные о владельце</legend>
+            <div>
+                <label for="name">Имя*</label>
+                <input type="text" name="Имя" id="name" value="" maxlength="20" required />
+            </div>
+            <div>
+                <label for="Fio">Фамилия</label>
+                <input type="text" name="Фамилия" id="Fio" value="" maxlength="25" />
+            </div>
+            <div>
+                <label for="phone">Номер телефона*</label>
+                <input type="tel" name="Номер телефона" id="phone" value=""  maxlength="15" required/>
+            </div>
+            <div>
+                <label for="email">Email*</label>
+                <input type="email" name="Email" id="email" value="" required />
+            </div>
+        </fieldset> <br />
+        <div>
+            <p>Выберите породу вашего питомца*</p>
+            <select required>
+                <option selected></option>
+                <option value="1">Абиссинская кошка</option>
+                <option value="2">Бенгальская кошка</option>
+                <option value="3">Бурмилла</option>
+                <option value="4">Египетская мау</option>
+                <option value="5">Манчкин</option>
+                <option value="6">Мейн-кун</option>
+                <option value="7">Не знаю породу</option>
+            </select> <br />
+        </div>
+        <div>
+            <p>Пол вашего питомеца*:</p>
+            <input type="radio" name="sex" value="1" required/>
+            Самка <br />
+            <input type="radio" name="sex" value="2" required/>
+            Самец<br />
+        </div> <br>
+        <div>
+            <label for="age">Возраст:</label>
+            <input type="number" min="1" max="20" value="4" id="age" name="age"/>
+        </div>
+        <div>
+            <p>Чем питается ваш питомец:</p>
+            <input type="checkbox" />
+            Сухой корм <br />
+            <input type="checkbox" />
+            Влажный корм <br />
+            <input type="checkbox" />
+            Натуральный корм <br />
+        </div><br />
+        <div>
+            <label for="file"> Приложить фото питомца*</label>
+            <input type="file" id="file" name="foto" required/>
+        </div>
+        <div>
+            <p>Комментарии владельца:</p>
+            <textarea name="comments" rows="10" cols="50">Комментарии владельца</textarea>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="agree" id="" required>
+            Даю согласие на обработку данных
+        </div>
+        <p>* отмечены поля обязательные для заполнения</p>
+        <div>
+            <button>Сохранить</button>
+            <input type="reset" />
+        </div>
+    </form>
+
+</body>
+
+</html>
